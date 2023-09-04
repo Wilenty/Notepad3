@@ -49,7 +49,7 @@ NEW:
 [.702.1]- Add new Toolbar button "Reset Zoom".
 [.619.1]- Indentation guide coloring on matching brace highlight.
 [.513.1]- Option on F/R dialog: incremental search ON/OFF.
-[.512.1]- Add an "Additional Notepad3Portable.cmd Launcher".
+[.512.1]- Add a "Additional Notepad3Portable.cmd Launcher".
 [.504.1]- Option: do not save blank new files.
 [.430.1]- Option to show/hide titlebar.
 [.424.1]- Localization in INNO Setup of "Open with Notepad3" (SUP).
