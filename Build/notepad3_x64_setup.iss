@@ -1,4 +1,4 @@
-﻿;* Notepad3 - Installer script x64 and arm64
+﻿;* Notepad3 - Installer script x86
 ;*
 ;* (c) Rizonesoft 2008-2023
 
@@ -112,30 +112,31 @@ WizardImageFile=.\Resources\WizardImageFileSmall.bmp
 
 [Languages]
 Name: "enu"; MessagesFile: "compiler:Default.isl"
-Name: "afk"; MessagesFile: "compiler:Languages-mod\Afrikaans.isl"
-Name: "bel"; MessagesFile: "compiler:Languages-mod\Belarusian.isl"
-Name: "deu"; MessagesFile: "compiler:Languages-mod\German.isl"
-Name: "ell"; MessagesFile: "compiler:Languages-mod\Greek.isl"
-Name: "eng"; MessagesFile: "compiler:Languages-mod\EnglishBritish.isl"
-Name: "esn"; MessagesFile: "compiler:Languages-mod\Spanish.isl"
-Name: "fra"; MessagesFile: "compiler:Languages-mod\French.isl"
-Name: "hin"; MessagesFile: "compiler:Languages-mod\Hindi.isl"
-Name: "hun"; MessagesFile: "compiler:Languages-mod\Hungarian.isl"
-Name: "ind"; MessagesFile: "compiler:Languages-mod\Indonesian.isl"
-Name: "ita"; MessagesFile: "compiler:Languages-mod\Italian.isl"
-Name: "jpn"; MessagesFile: "compiler:Languages-mod\Japanese.isl"
-Name: "kor"; MessagesFile: "compiler:Languages-mod\Korean.isl"
-Name: "nld"; MessagesFile: "compiler:Languages-mod\Dutch.isl"
-Name: "plk"; MessagesFile: "compiler:Languages-mod\Polish.isl"
-Name: "ptb"; MessagesFile: "compiler:Languages-mod\BrazilianPortuguese.isl"
-Name: "ptg"; MessagesFile: "compiler:Languages-mod\Portuguese.isl"
-Name: "rus"; MessagesFile: "compiler:Languages-mod\Russian.isl"
-Name: "sky"; MessagesFile: "compiler:Languages-mod\Slovak.isl"
-Name: "sve"; MessagesFile: "compiler:Languages-mod\Swedish.isl"
-Name: "trk"; MessagesFile: "compiler:Languages-mod\Turkish.isl"
-Name: "vit"; MessagesFile: "compiler:Languages-mod\Vietnamese.isl"
-Name: "chs"; MessagesFile: "compiler:Languages-mod\ChineseSimplified.isl"
-Name: "cht"; MessagesFile: "compiler:Languages-mod\ChineseTraditional.isl"
+Name: "afk"; MessagesFile: "compiler:Languages\Afrikaans.isl"
+Name: "bel"; MessagesFile: "compiler:Languages\Belarusian.isl"
+Name: "deu"; MessagesFile: "compiler:Languages\German.islu"
+Name: "ell"; MessagesFile: "compiler:Languages\Greek.islu"
+Name: "eng"; MessagesFile: "compiler:Languages\EnglishBritish.isl"
+Name: "esn"; MessagesFile: "compiler:Languages\Spanish.isl"
+Name: "esm"; MessagesFile: "compiler:Languages\Spanish.isl"
+Name: "fra"; MessagesFile: "compiler:Languages\French.islu"
+Name: "hin"; MessagesFile: "compiler:Languages\Hindi.islu"
+Name: "hun"; MessagesFile: "compiler:Languages\Hungarian.isl"
+Name: "ind"; MessagesFile: "compiler:Languages\Indonesian.islu"
+Name: "ita"; MessagesFile: "compiler:Languages\Italian.islu"
+Name: "jpn"; MessagesFile: "compiler:Languages\Japanese.isl"
+Name: "kor"; MessagesFile: "compiler:Languages\Korean.isl"
+Name: "nld"; MessagesFile: "compiler:Languages\Dutch.islu"
+Name: "plk"; MessagesFile: "compiler:Languages\Polish.isl"
+Name: "ptb"; MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
+Name: "ptg"; MessagesFile: "compiler:Languages\Portuguese.isl"
+Name: "rus"; MessagesFile: "compiler:Languages\Russian.isl"
+Name: "sky"; MessagesFile: "compiler:Languages\Slovak.isl"
+Name: "sve"; MessagesFile: "compiler:Languages\Swedish.isl"
+Name: "trk"; MessagesFile: "compiler:Languages\Turkish.isl"
+Name: "vit"; MessagesFile: "compiler:Languages\Vietnamese.islu"
+Name: "chs"; MessagesFile: "compiler:Languages\ChineseSimplified.islu"
+Name: "cht"; MessagesFile: "compiler:Languages\ChineseTraditional.islu"
 
 
 [Messages]
@@ -146,6 +147,7 @@ deu.BeveledLabel=German
 ell.BeveledLabel=Greek
 eng.BeveledLabel=English (GB)
 esn.BeveledLabel=Spanish
+esm.BeveledLabel=Spanish (MX)
 fra.BeveledLabel=French
 hin.BeveledLabel=Hindi
 hun.BeveledLabel=Hungarian
@@ -299,6 +301,25 @@ esn.tsk_LaunchWelcomePage=¡Información importante de lanzamiento!
 esn.tsk_RemoveOpenWith=Eliminar "Abrir con {#app_name}" del menú contextual
 esn.tsk_SetOpenWith=Añadir "Abrir con {#app_name}" al menú contextual
 esn.reg_Open_with_NP3=Abrir con {#app_name}
+
+esm.msg_DeleteSettings=¿También quieres eliminar la configuración y los temas de {#app_name}?%n%nSi planeas instalar {#app_name} nuevamente, no tienes que eliminarlos.
+#ifdef sse_required
+esm.msg_simd_sse=Esta compilación de {#app_name} requiere una CPU compatible con la extensión SSE.%n%nTu CPU no tiene esas capacidades.
+#EndIf
+#ifdef sse2_required
+esm.msg_simd_sse2=Esta compilación de {#app_name} requiere una CPU compatible con la extensión SSE2.%n%nTu CPU no tiene esas capacidades.
+#endif
+esm.tsk_AllUsers=Para todos los usuarios
+esm.tsk_CurrentUser=Sólo para el usuario actual
+esm.tsk_Other=Otras tareas:
+esm.tsk_ResetSettings=Restablecer la configuración y los temas de {#app_name}
+esm.tsk_RemoveDefault=Restaurar el Notepad de Windows
+esm.tsk_SetDefault=Reemplazar el Notepad de Windows con {#app_name}
+esm.tsk_StartMenuIcon=Crear un acceso directo al menú de inicio
+esm.tsk_LaunchWelcomePage=¡Información importante de lanzamiento!
+esm.tsk_RemoveOpenWith=Eliminar "Abrir con {#app_name}" del menú contextual
+esm.tsk_SetOpenWith=Añadir "Abrir con {#app_name}" al menú contextual
+esm.reg_Open_with_NP3=Abrir con {#app_name}
 
 fra.msg_DeleteSettings=Voulez-vous également supprimer tous les réglages et thèmes de {#app_name} ?%n%nSi vous comptez réinstaller {#app_name}, vous pouvez les garder.
 #ifdef sse_required
@@ -642,7 +663,6 @@ cht.tsk_RemoveOpenWith=從上下文選單中刪除"用 {#app_name} 開啟"
 cht.tsk_SetOpenWith=在上下文選單中新增"用 {#app_name} 開啟"
 cht.reg_Open_with_NP3=用 {#app_name} 開啟
 
-
 [Tasks]
 Name: "reset_settings"; Description: "{cm:tsk_ResetSettings}"; GroupDescription: "{cm:tsk_Other}"; Flags: checkedonce unchecked; Check: SettingsExistCheck()
 Name: "set_default"; Description: "{cm:tsk_SetDefault}"; GroupDescription: "{cm:tsk_Other}"; Check: not DefaulNotepadCheck()
@@ -657,74 +677,134 @@ Name: "desktopicon\user"; Description: "{cm:tsk_CurrentUser}"; GroupDescription:
 Name: "desktopicon\common"; Description: "{cm:tsk_AllUsers}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked exclusive
 
 
+[components]
+Name: "{#app_name}"; Description: "{#app_name}"; Types: full compact custom; Flags: fixed
+Name: "Docs"; Description: "Docs"; Types: full
+Name: "Docs\crypto"; Description: "crypto"; Types: full
+Name: "Docs\uthash"; Description: "uthash"; Types: full
+Name: "Themes"; Description: "Themes"; Types: full
+Name: "Themes\Dark"; Description: "Dark"; Types: full
+Name: "Themes\Obsidian"; Description: "Obsidian"; Types: full
+Name: "Themes\Sombra"; Description: "Sombra"; Types: full
+Name: "lng"; Description: "Languages"; Types: full
+Name: "lng\af_ZA"; Description: "af-ZA Afrikaans"; Types: full; Languages: not afk
+Name: "lng\af_ZA"; Description: "af-ZA Afrikaans"; Types: full compact custom; Languages: afk
+Name: "lng\be_BY"; Description: "be-BY Беларуская"; Types: full; Languages: not bel
+Name: "lng\be_BY"; Description: "be-BY Беларуская"; Types: full compact custom; Languages: bel
+Name: "lng\de_DE"; Description: "de-DE Deutsch"; Types: full; Languages: not deu
+Name: "lng\de_DE"; Description: "de-DE Deutsch"; Types: full compact custom; Languages: deu
+Name: "lng\el_GR"; Description: "el-GR Ελληνικά"; Types: full; Languages: not ell
+Name: "lng\el_GR"; Description: "el-GR Ελληνικά"; Types: full compact custom; Languages: ell
+Name: "lng\en_GB"; Description: "en-GB English (British)"; Types: full; Languages: not eng
+Name: "lng\en_GB"; Description: "en-GB English (British)"; Types: full compact custom; Languages: eng
+Name: "lng\es_ES"; Description: "es-ES Español"; Types: full; Languages: not esn
+Name: "lng\es_ES"; Description: "es-ES Español"; Types: full compact custom; Languages: esn
+Name: "lng\fr_FR"; Description: "fr-FR Français"; Types: full; Languages: not fra
+Name: "lng\fr_FR"; Description: "fr-FR Français"; Types: full compact custom; Languages: fra
+Name: "lng\hi_IN"; Description: "hi-IN हिन्दी"; Types: full; Languages: not hin
+Name: "lng\hi_IN"; Description: "hi-IN हिन्दी"; Types: full compact custom; Languages: hin
+Name: "lng\hu_HU"; Description: "hu-HU Magyar"; Types: full; Languages: not hun
+Name: "lng\hu_HU"; Description: "hu-HU Magyar"; Types: full compact custom; Languages: hun
+Name: "lng\id_ID"; Description: "id-ID Bahasa Indonesia"; Types: full; Languages: not ind
+Name: "lng\id_ID"; Description: "id-ID Bahasa Indonesia"; Types: full compact custom; Languages: ind
+Name: "lng\it_IT"; Description: "it-IT Italiano"; Types: full; Languages: not ita
+Name: "lng\it_IT"; Description: "it-IT Italiano"; Types: full compact custom; Languages: ita
+Name: "lng\ja_JP"; Description: "ja-JP 日本語"; Types: full; Languages: not jpn
+Name: "lng\ja_JP"; Description: "ja-JP 日本語"; Types: full compact custom; Languages: jpn
+Name: "lng\ko_KR"; Description: "ko-KR 한국어"; Types: full; Languages: not kor
+Name: "lng\ko_KR"; Description: "ko-KR 한국어"; Types: full compact custom; Languages: kor
+Name: "lng\nl_NL"; Description: "nl-NL Nederlands"; Types: full; Languages: not nld
+Name: "lng\nl_NL"; Description: "nl-NL Nederlands"; Types: full compact custom; Languages: nld
+Name: "lng\pl_PL"; Description: "pl-PL Polski"; Types: full; Languages: not Plk
+Name: "lng\pl_PL"; Description: "pl-PL Polski"; Types: full compact custom; Languages: Plk
+Name: "lng\pt_BR"; Description: "pt-BR Português (Brasileiro)"; Types: full; Languages: not ptb
+Name: "lng\pt_BR"; Description: "pt-BR Português (Brasileiro)"; Types: full compact custom; Languages: ptb
+Name: "lng\pt_PT"; Description: "pt-PT Português"; Types: full; Languages: not ptg
+Name: "lng\pt_PT"; Description: "pt-PT Português"; Types: full compact custom; Languages: ptg
+Name: "lng\ru_RU"; Description: "ru-RU Русский"; Types: full; Languages: not rus
+Name: "lng\ru_RU"; Description: "ru-RU Русский"; Types: full compact custom; Languages: rus
+Name: "lng\sk_SK"; Description: "sk-SK Slovenčina"; Types: full; Languages: not sky
+Name: "lng\sk_SK"; Description: "sk-SK Slovenčina"; Types: full compact custom; Languages: sky
+Name: "lng\sv_SE"; Description: "sv-SE Svenska"; Types: full; Languages: not sve
+Name: "lng\sv_SE"; Description: "sv-SE Svenska"; Types: full compact custom; Languages: sve
+Name: "lng\tr_TR"; Description: "tr-TR Türkçe"; Types: full; Languages: not trk
+Name: "lng\tr_TR"; Description: "tr-TR Türkçe"; Types: full compact custom; Languages: trk
+Name: "lng\vi_VN"; Description: "vi-VN Tiếng Việt"; Types: full; Languages: not vit
+Name: "lng\vi_VN"; Description: "vi-VN Tiếng Việt"; Types: full compact custom; Languages: vit
+Name: "lng\zh_CN"; Description: "zh-CN 简体中文"; Types: full; Languages: not chs
+Name: "lng\zh_CN"; Description: "zh-CN 简体中文"; Types: full compact custom; Languages: chs
+Name: "lng\zh_TW"; Description: "zh-TW 正體中文"; Types: full; Languages: not cht
+Name: "lng\zh_TW"; Description: "zh-TW 正體中文"; Types: full compact custom; Languages: cht
+
+
 [Files]
-Source: "{#bindir}{#RLSdir}\Notepad3.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\minipath.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\grepWinNP3.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\np3encrypt.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\License.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\Readme.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\grepWinNP3\grepWinLicense.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "Changes.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
-Source: "Docs\*.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
-Source: "Docs\crypto\*.txt"; DestDir: "{app}\Docs\crypto"; Flags: ignoreversion
-Source: "Docs\uthash\*.txt"; DestDir: "{app}\Docs\uthash"; Flags: ignoreversion
-Source: "Notepad3.ini"; DestDir: "{userappdata}\Rizonesoft\Notepad3"; Flags: onlyifdoesntexist uninsneveruninstall
-Source: "minipath.ini"; DestDir: "{userappdata}\Rizonesoft\Notepad3"; Flags: onlyifdoesntexist uninsneveruninstall
-Source: "Themes\Dark.ini"; DestDir: "{userappdata}\Rizonesoft\Notepad3\Themes"; Flags: onlyifdoesntexist uninsneveruninstall
-Source: "Themes\Obsidian.ini"; DestDir: "{userappdata}\Rizonesoft\Notepad3\Themes"; Flags: onlyifdoesntexist uninsneveruninstall
-Source: "Themes\Sombra.ini"; DestDir: "{userappdata}\Rizonesoft\Notepad3\Themes"; Flags: onlyifdoesntexist uninsneveruninstall
-Source: "{#bindir}{#RLSdir}\lng\mplng.dll"; DestDir: "{app}\lng"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\np3lng.dll"; DestDir: "{app}\lng"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\gwLng\*.lang"; DestDir: "{app}\lng\gwLng"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\af-ZA\mplng.dll.mui"; DestDir: "{app}\lng\af-ZA"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\af-ZA\np3lng.dll.mui"; DestDir: "{app}\lng\af-ZA"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\be-BY\mplng.dll.mui"; DestDir: "{app}\lng\be-BY"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\be-BY\np3lng.dll.mui"; DestDir: "{app}\lng\be-BY"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\de-DE\mplng.dll.mui"; DestDir: "{app}\lng\de-DE"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\de-DE\np3lng.dll.mui"; DestDir: "{app}\lng\de-DE"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\el-GR\mplng.dll.mui"; DestDir: "{app}\lng\el-GR"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\el-GR\np3lng.dll.mui"; DestDir: "{app}\lng\el-GR"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\en-GB\mplng.dll.mui"; DestDir: "{app}\lng\en-GB"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\en-GB\np3lng.dll.mui"; DestDir: "{app}\lng\en-GB"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\es-ES\mplng.dll.mui"; DestDir: "{app}\lng\es-ES"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\es-ES\np3lng.dll.mui"; DestDir: "{app}\lng\es-ES"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\fr-FR\mplng.dll.mui"; DestDir: "{app}\lng\fr-FR"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\fr-FR\np3lng.dll.mui"; DestDir: "{app}\lng\fr-FR"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\hi-IN\mplng.dll.mui"; DestDir: "{app}\lng\hi-IN"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\hi-IN\np3lng.dll.mui"; DestDir: "{app}\lng\hi-IN"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\hu-HU\mplng.dll.mui"; DestDir: "{app}\lng\hu-HU"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\hu-HU\np3lng.dll.mui"; DestDir: "{app}\lng\hu-HU"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\id-ID\mplng.dll.mui"; DestDir: "{app}\lng\id-ID"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\id-ID\np3lng.dll.mui"; DestDir: "{app}\lng\id-ID"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\it-IT\mplng.dll.mui"; DestDir: "{app}\lng\it-IT"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\it-IT\np3lng.dll.mui"; DestDir: "{app}\lng\it-IT"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\ja-JP\mplng.dll.mui"; DestDir: "{app}\lng\ja-JP"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\ja-JP\np3lng.dll.mui"; DestDir: "{app}\lng\ja-JP"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\ko-KR\mplng.dll.mui"; DestDir: "{app}\lng\ko-KR"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\ko-KR\np3lng.dll.mui"; DestDir: "{app}\lng\ko-KR"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\nl-NL\mplng.dll.mui"; DestDir: "{app}\lng\nl-NL"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\nl-NL\np3lng.dll.mui"; DestDir: "{app}\lng\nl-NL"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\pl-PL\mplng.dll.mui"; DestDir: "{app}\lng\pl-PL"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\pl-PL\np3lng.dll.mui"; DestDir: "{app}\lng\pl-PL"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\pt-BR\mplng.dll.mui"; DestDir: "{app}\lng\pt-BR"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\pt-BR\np3lng.dll.mui"; DestDir: "{app}\lng\pt-BR"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\pt-PT\mplng.dll.mui"; DestDir: "{app}\lng\pt-PT"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\pt-PT\np3lng.dll.mui"; DestDir: "{app}\lng\pt-PT"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\ru-RU\mplng.dll.mui"; DestDir: "{app}\lng\ru-RU"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\ru-RU\np3lng.dll.mui"; DestDir: "{app}\lng\ru-RU"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\sk-SK\mplng.dll.mui"; DestDir: "{app}\lng\sk-SK"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\sk-SK\np3lng.dll.mui"; DestDir: "{app}\lng\sk-SK"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\sv-SE\mplng.dll.mui"; DestDir: "{app}\lng\sv-SE"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\sv-SE\np3lng.dll.mui"; DestDir: "{app}\lng\sv-SE"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\tr-TR\mplng.dll.mui"; DestDir: "{app}\lng\tr-TR"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\tr-TR\np3lng.dll.mui"; DestDir: "{app}\lng\tr-TR"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\vi-VN\mplng.dll.mui"; DestDir: "{app}\lng\vi-VN"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\vi-VN\np3lng.dll.mui"; DestDir: "{app}\lng\vi-VN"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\zh-CN\mplng.dll.mui"; DestDir: "{app}\lng\zh-CN"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\zh-CN\np3lng.dll.mui"; DestDir: "{app}\lng\zh-CN"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\zh-TW\mplng.dll.mui"; DestDir: "{app}\lng\zh-TW"; Flags: ignoreversion
-Source: "{#bindir}{#RLSdir}\lng\zh-TW\np3lng.dll.mui"; DestDir: "{app}\lng\zh-TW"; Flags: ignoreversion
+Source: "{#bindir}{#RLSdir}\Notepad3.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: {#app_name}
+Source: "{#bindir}{#RLSdir}\minipath.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: {#app_name}
+Source: "{#bindir}{#RLSdir}\grepWinNP3.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: {#app_name}
+Source: "{#bindir}{#RLSdir}\np3encrypt.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: {#app_name}
+Source: "..\License.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: {#app_name}
+Source: "..\Readme.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: {#app_name}
+Source: "..\grepWinNP3\grepWinLicense.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: {#app_name}
+Source: "Changes.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion; Components: Docs
+Source: "Docs\*.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion; Components: Docs
+Source: "Docs\crypto\*.txt"; DestDir: "{app}\Docs\crypto"; Flags: ignoreversion; Components: Docs\crypto
+Source: "Docs\uthash\*.txt"; DestDir: "{app}\Docs\uthash"; Flags: ignoreversion; Components: Docs\uthash
+Source: "Notepad3.ini"; DestDir: "{userappdata}\Rizonesoft\Notepad3"; Flags: onlyifdoesntexist uninsneveruninstall; Components: {#app_name}
+Source: "minipath.ini"; DestDir: "{userappdata}\Rizonesoft\Notepad3"; Flags: onlyifdoesntexist uninsneveruninstall; Components: {#app_name}
+Source: "Themes\Dark.ini"; DestDir: "{userappdata}\Rizonesoft\Notepad3\Themes"; Flags: onlyifdoesntexist uninsneveruninstall; Components: Themes\Dark
+Source: "Themes\Obsidian.ini"; DestDir: "{userappdata}\Rizonesoft\Notepad3\Themes"; Flags: onlyifdoesntexist uninsneveruninstall; Components: Themes\Obsidian
+Source: "Themes\Sombra.ini"; DestDir: "{userappdata}\Rizonesoft\Notepad3\Themes"; Flags: onlyifdoesntexist uninsneveruninstall; Components: Themes\Sombra
+Source: "{#bindir}{#RLSdir}\lng\mplng.dll"; DestDir: "{app}\lng"; Flags: ignoreversion; Components: lng
+Source: "{#bindir}{#RLSdir}\lng\np3lng.dll"; DestDir: "{app}\lng"; Flags: ignoreversion; Components: lng
+Source: "{#bindir}{#RLSdir}\lng\gwLng\*.lang"; DestDir: "{app}\lng\gwLng"; Flags: ignoreversion; Components: lng
+Source: "{#bindir}{#RLSdir}\lng\af-ZA\mplng.dll.mui"; DestDir: "{app}\lng\af-ZA"; Flags: ignoreversion; Components: lng\af_ZA
+Source: "{#bindir}{#RLSdir}\lng\af-ZA\np3lng.dll.mui"; DestDir: "{app}\lng\af-ZA"; Flags: ignoreversion; Components: lng\af_ZA
+Source: "{#bindir}{#RLSdir}\lng\be-BY\mplng.dll.mui"; DestDir: "{app}\lng\be-BY"; Flags: ignoreversion; Components: lng\be_BY
+Source: "{#bindir}{#RLSdir}\lng\be-BY\np3lng.dll.mui"; DestDir: "{app}\lng\be-BY"; Flags: ignoreversion; Components: lng\be_BY
+Source: "{#bindir}{#RLSdir}\lng\de-DE\mplng.dll.mui"; DestDir: "{app}\lng\de-DE"; Flags: ignoreversion; Components: lng\de_DE
+Source: "{#bindir}{#RLSdir}\lng\de-DE\np3lng.dll.mui"; DestDir: "{app}\lng\de-DE"; Flags: ignoreversion; Components: lng\de_DE
+Source: "{#bindir}{#RLSdir}\lng\el-GR\mplng.dll.mui"; DestDir: "{app}\lng\el-GR"; Flags: ignoreversion; Components: lng\el_GR
+Source: "{#bindir}{#RLSdir}\lng\el-GR\np3lng.dll.mui"; DestDir: "{app}\lng\el-GR"; Flags: ignoreversion; Components: lng\el_GR
+Source: "{#bindir}{#RLSdir}\lng\en-GB\mplng.dll.mui"; DestDir: "{app}\lng\en-GB"; Flags: ignoreversion; Components: lng\en_GB
+Source: "{#bindir}{#RLSdir}\lng\en-GB\np3lng.dll.mui"; DestDir: "{app}\lng\en-GB"; Flags: ignoreversion; Components: lng\en_GB
+Source: "{#bindir}{#RLSdir}\lng\es-ES\mplng.dll.mui"; DestDir: "{app}\lng\es-ES"; Flags: ignoreversion; Components: lng\es_ES
+Source: "{#bindir}{#RLSdir}\lng\es-ES\np3lng.dll.mui"; DestDir: "{app}\lng\es-ES"; Flags: ignoreversion; Components: lng\es_ES
+Source: "{#bindir}{#RLSdir}\lng\fr-FR\mplng.dll.mui"; DestDir: "{app}\lng\fr-FR"; Flags: ignoreversion; Components: lng\fr_FR
+Source: "{#bindir}{#RLSdir}\lng\fr-FR\np3lng.dll.mui"; DestDir: "{app}\lng\fr-FR"; Flags: ignoreversion; Components: lng\fr_FR
+Source: "{#bindir}{#RLSdir}\lng\hi-IN\mplng.dll.mui"; DestDir: "{app}\lng\hi-IN"; Flags: ignoreversion; Components: lng\hi_IN
+Source: "{#bindir}{#RLSdir}\lng\hi-IN\np3lng.dll.mui"; DestDir: "{app}\lng\hi-IN"; Flags: ignoreversion; Components: lng\hi_IN
+Source: "{#bindir}{#RLSdir}\lng\hu-HU\mplng.dll.mui"; DestDir: "{app}\lng\hu-HU"; Flags: ignoreversion; Components: lng\hu_HU
+Source: "{#bindir}{#RLSdir}\lng\hu-HU\np3lng.dll.mui"; DestDir: "{app}\lng\hu-HU"; Flags: ignoreversion; Components: lng\hu_HU
+Source: "{#bindir}{#RLSdir}\lng\id-ID\mplng.dll.mui"; DestDir: "{app}\lng\id-ID"; Flags: ignoreversion; Components: lng\id_ID
+Source: "{#bindir}{#RLSdir}\lng\id-ID\np3lng.dll.mui"; DestDir: "{app}\lng\id-ID"; Flags: ignoreversion; Components: lng\id_ID
+Source: "{#bindir}{#RLSdir}\lng\it-IT\mplng.dll.mui"; DestDir: "{app}\lng\it-IT"; Flags: ignoreversion; Components: lng\it_IT
+Source: "{#bindir}{#RLSdir}\lng\it-IT\np3lng.dll.mui"; DestDir: "{app}\lng\it-IT"; Flags: ignoreversion; Components: lng\it_IT
+Source: "{#bindir}{#RLSdir}\lng\ja-JP\mplng.dll.mui"; DestDir: "{app}\lng\ja-JP"; Flags: ignoreversion; Components: lng\ja_JP
+Source: "{#bindir}{#RLSdir}\lng\ja-JP\np3lng.dll.mui"; DestDir: "{app}\lng\ja-JP"; Flags: ignoreversion; Components: lng\ja_JP
+Source: "{#bindir}{#RLSdir}\lng\ko-KR\mplng.dll.mui"; DestDir: "{app}\lng\ko-KR"; Flags: ignoreversion; Components: lng\ko_KR
+Source: "{#bindir}{#RLSdir}\lng\ko-KR\np3lng.dll.mui"; DestDir: "{app}\lng\ko-KR"; Flags: ignoreversion; Components: lng\ko_KR
+Source: "{#bindir}{#RLSdir}\lng\nl-NL\mplng.dll.mui"; DestDir: "{app}\lng\nl-NL"; Flags: ignoreversion; Components: lng\nl_NL
+Source: "{#bindir}{#RLSdir}\lng\nl-NL\np3lng.dll.mui"; DestDir: "{app}\lng\nl-NL"; Flags: ignoreversion; Components: lng\nl_NL
+Source: "{#bindir}{#RLSdir}\lng\pl-PL\mplng.dll.mui"; DestDir: "{app}\lng\pl-PL"; Flags: ignoreversion; Components: lng\pl_PL
+Source: "{#bindir}{#RLSdir}\lng\pl-PL\np3lng.dll.mui"; DestDir: "{app}\lng\pl-PL"; Flags: ignoreversion; Components: lng\pl_PL
+Source: "{#bindir}{#RLSdir}\lng\pt-BR\mplng.dll.mui"; DestDir: "{app}\lng\pt-BR"; Flags: ignoreversion; Components: lng\pt_BR
+Source: "{#bindir}{#RLSdir}\lng\pt-BR\np3lng.dll.mui"; DestDir: "{app}\lng\pt-BR"; Flags: ignoreversion; Components: lng\pt_BR
+Source: "{#bindir}{#RLSdir}\lng\pt-PT\mplng.dll.mui"; DestDir: "{app}\lng\pt-PT"; Flags: ignoreversion; Components: lng\pt_PT
+Source: "{#bindir}{#RLSdir}\lng\pt-PT\np3lng.dll.mui"; DestDir: "{app}\lng\pt-PT"; Flags: ignoreversion; Components: lng\pt_PT
+Source: "{#bindir}{#RLSdir}\lng\ru-RU\mplng.dll.mui"; DestDir: "{app}\lng\ru-RU"; Flags: ignoreversion; Components: lng\ru_RU
+Source: "{#bindir}{#RLSdir}\lng\ru-RU\np3lng.dll.mui"; DestDir: "{app}\lng\ru-RU"; Flags: ignoreversion; Components: lng\ru_RU
+Source: "{#bindir}{#RLSdir}\lng\sk-SK\mplng.dll.mui"; DestDir: "{app}\lng\sk-SK"; Flags: ignoreversion; Components: lng\sk_SK
+Source: "{#bindir}{#RLSdir}\lng\sk-SK\np3lng.dll.mui"; DestDir: "{app}\lng\sk-SK"; Flags: ignoreversion; Components: lng\sk_SK
+Source: "{#bindir}{#RLSdir}\lng\sv-SE\mplng.dll.mui"; DestDir: "{app}\lng\sv-SE"; Flags: ignoreversion; Components: lng\sv_SE
+Source: "{#bindir}{#RLSdir}\lng\sv-SE\np3lng.dll.mui"; DestDir: "{app}\lng\sv-SE"; Flags: ignoreversion; Components: lng\sv_SE
+Source: "{#bindir}{#RLSdir}\lng\tr-TR\mplng.dll.mui"; DestDir: "{app}\lng\tr-TR"; Flags: ignoreversion; Components: lng\tr_TR
+Source: "{#bindir}{#RLSdir}\lng\tr-TR\np3lng.dll.mui"; DestDir: "{app}\lng\tr-TR"; Flags: ignoreversion; Components: lng\tr_TR
+Source: "{#bindir}{#RLSdir}\lng\vi-VN\mplng.dll.mui"; DestDir: "{app}\lng\vi-VN"; Flags: ignoreversion; Components: lng\vi_VN
+Source: "{#bindir}{#RLSdir}\lng\vi-VN\np3lng.dll.mui"; DestDir: "{app}\lng\vi-VN"; Flags: ignoreversion; Components: lng\vi_VN
+Source: "{#bindir}{#RLSdir}\lng\zh-CN\mplng.dll.mui"; DestDir: "{app}\lng\zh-CN"; Flags: ignoreversion; Components: lng\zh_CN
+Source: "{#bindir}{#RLSdir}\lng\zh-CN\np3lng.dll.mui"; DestDir: "{app}\lng\zh-CN"; Flags: ignoreversion; Components: lng\zh_CN
+Source: "{#bindir}{#RLSdir}\lng\zh-TW\mplng.dll.mui"; DestDir: "{app}\lng\zh-TW"; Flags: ignoreversion; Components: lng\zh_TW
+Source: "{#bindir}{#RLSdir}\lng\zh-TW\np3lng.dll.mui"; DestDir: "{app}\lng\zh-TW"; Flags: ignoreversion; Components: lng\zh_TW
 
 
 [Dirs]
@@ -1203,6 +1283,9 @@ procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
     end;
 end;
 
+Var
+  InstallType: TRadioGroup;
+
 procedure InitializeWizard();
   begin
     reg_Open_with_NP3 := CustomMessage('reg_Open_with_NP3');
@@ -1215,6 +1298,21 @@ procedure InitializeWizard();
       begin
         Top := 0;
         Height := SelectTasksPage.ClientHeight;
+      end;
+      InstallType := TRadioGroup.Create(WelcomePage);
+      With InstallType do
+      begin
+        Parent := WelcomePage;
+        Caption := SetupMessage( msgReadyMemoType );
+//        Top := ScaleY(175);
+//        Height := WelcomePage.ClientHeight - Top - ScaleY(5);
+        Top := WelcomePage.ClientHeight - Height - ScaleY(5);
+        Anchors := [akTop, akBottom];
+        With Items do
+        begin
+          Add( SetupMessage( msgButtonInstall ) );
+          Add( '&Portable' );
+        end;
       end;
     end;
 end;
