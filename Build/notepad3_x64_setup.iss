@@ -118,7 +118,6 @@ Name: "deu"; MessagesFile: "compiler:Languages\German.islu"
 Name: "ell"; MessagesFile: "compiler:Languages\Greek.islu"
 Name: "eng"; MessagesFile: "compiler:Languages\EnglishBritish.isl"
 Name: "esn"; MessagesFile: "compiler:Languages\Spanish.isl"
-Name: "esm"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "fra"; MessagesFile: "compiler:Languages\French.islu"
 Name: "hin"; MessagesFile: "compiler:Languages\Hindi.islu"
 Name: "hun"; MessagesFile: "compiler:Languages\Hungarian.isl"
@@ -147,7 +146,6 @@ deu.BeveledLabel=German
 ell.BeveledLabel=Greek
 eng.BeveledLabel=English (GB)
 esn.BeveledLabel=Spanish
-esm.BeveledLabel=Spanish (MX)
 fra.BeveledLabel=French
 hin.BeveledLabel=Hindi
 hun.BeveledLabel=Hungarian
@@ -301,25 +299,6 @@ esn.tsk_LaunchWelcomePage=¡Información importante de lanzamiento!
 esn.tsk_RemoveOpenWith=Eliminar "Abrir con {#app_name}" del menú contextual
 esn.tsk_SetOpenWith=Añadir "Abrir con {#app_name}" al menú contextual
 esn.reg_Open_with_NP3=Abrir con {#app_name}
-
-esm.msg_DeleteSettings=¿También quieres eliminar la configuración y los temas de {#app_name}?%n%nSi planeas instalar {#app_name} nuevamente, no tienes que eliminarlos.
-#ifdef sse_required
-esm.msg_simd_sse=Esta compilación de {#app_name} requiere una CPU compatible con la extensión SSE.%n%nTu CPU no tiene esas capacidades.
-#EndIf
-#ifdef sse2_required
-esm.msg_simd_sse2=Esta compilación de {#app_name} requiere una CPU compatible con la extensión SSE2.%n%nTu CPU no tiene esas capacidades.
-#endif
-esm.tsk_AllUsers=Para todos los usuarios
-esm.tsk_CurrentUser=Sólo para el usuario actual
-esm.tsk_Other=Otras tareas:
-esm.tsk_ResetSettings=Restablecer la configuración y los temas de {#app_name}
-esm.tsk_RemoveDefault=Restaurar el Notepad de Windows
-esm.tsk_SetDefault=Reemplazar el Notepad de Windows con {#app_name}
-esm.tsk_StartMenuIcon=Crear un acceso directo al menú de inicio
-esm.tsk_LaunchWelcomePage=¡Información importante de lanzamiento!
-esm.tsk_RemoveOpenWith=Eliminar "Abrir con {#app_name}" del menú contextual
-esm.tsk_SetOpenWith=Añadir "Abrir con {#app_name}" al menú contextual
-esm.reg_Open_with_NP3=Abrir con {#app_name}
 
 fra.msg_DeleteSettings=Voulez-vous également supprimer tous les réglages et thèmes de {#app_name} ?%n%nSi vous comptez réinstaller {#app_name}, vous pouvez les garder.
 #ifdef sse_required
@@ -1283,9 +1262,6 @@ procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
     end;
 end;
 
-Var
-  InstallType: TRadioGroup;
-
 procedure InitializeWizard();
   begin
     reg_Open_with_NP3 := CustomMessage('reg_Open_with_NP3');
@@ -1298,21 +1274,6 @@ procedure InitializeWizard();
       begin
         Top := 0;
         Height := SelectTasksPage.ClientHeight;
-      end;
-      InstallType := TRadioGroup.Create(WelcomePage);
-      With InstallType do
-      begin
-        Parent := WelcomePage;
-        Caption := SetupMessage( msgReadyMemoType );
-//        Top := ScaleY(175);
-//        Height := WelcomePage.ClientHeight - Top - ScaleY(5);
-        Top := WelcomePage.ClientHeight - Height - ScaleY(5);
-        Anchors := [akTop, akBottom];
-        With Items do
-        begin
-          Add( SetupMessage( msgButtonInstall ) );
-          Add( '&Portable' );
-        end;
       end;
     end;
 end;
