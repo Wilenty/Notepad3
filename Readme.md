@@ -1,3 +1,15 @@
+### I do not agree to use my work/code in all others "rizonesoft Notepad3" without mention about my  contribution.
+
+Because, without any word they removed my "Additional Notepad3Portable.cmd Launcher": https://github.com/rizonesoft/Notepad3/commit/a3eb9f1a06e459e3739d1b48e270342c1707332c?diff=split
+![Additional Notepad3Portable cmd Launcher](https://github.com/Wilenty/Notepad3/assets/61757638/6e28310f-37cd-40a7-83a5-f0da9b03d3ad)
+
+and then they removed thanks giving for my modification: https://github.com/rizonesoft/Notepad3/commit/99c579a9bd5c419ea3d201acd7fced03095b531b?diff=split
+![thanks giving for my modification](https://github.com/Wilenty/Notepad3/assets/61757638/0d6a5e42-eb45-4b66-82e1-664068efe82a)
+
+RizoneSoft, this is shameful.
+
+### So, because of your behaviour, I do not agree to use any part my code (work) in any of your product.
+
 # Notepad3
 
 [![Build status](https://img.shields.io/appveyor/ci/rizonesoft/notepad3/master.svg)](https://ci.appveyor.com/project/rizonesoft/notepad3/branch/master)
