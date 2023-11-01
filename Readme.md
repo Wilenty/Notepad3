@@ -1,4 +1,4 @@
-### I do not agree to use my work/code in all others "rizonesoft Notepad3" without mention about my  contribution.
+### I do not agree to use any of my work/code in all others "rizonesoft Notepad3" without mention about my  contribution.
 
 Because, without any word they removed my "Additional Notepad3Portable.cmd Launcher": https://github.com/rizonesoft/Notepad3/commit/a3eb9f1a06e459e3739d1b48e270342c1707332c?diff=split
 ![Additional Notepad3Portable cmd Launcher](https://github.com/Wilenty/Notepad3/assets/61757638/6e28310f-37cd-40a7-83a5-f0da9b03d3ad)
