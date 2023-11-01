@@ -8,7 +8,9 @@ and then they removed thanks giving for my modification: https://github.com/rizo
 
 RizoneSoft, this is shameful.
 
-### So, because of your behaviour, I do not agree to use any part of my code (work) in any of your product.
+### Please also remove my contribution to NP3 (also in other works) if you have removed the mention of my contribution already. I do not agree to use any part of my code (work) in any of your products.
+
+---
 
 # Notepad3
 
