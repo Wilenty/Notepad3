@@ -10,6 +10,10 @@ RizoneSoft, this is shameful.
 
 ### Please also remove my contribution to NP3 (also in other works) if you have removed the mention of my contribution already. I do not agree to use any part of my code (work) in any of your products.
 
+Post Scriptum:
+https://github.com/rizonesoft/Notepad3/commit/fc39fa584805d4d1b6d2a10dcafc394c7477c4fa?diff=split
+![PS](https://github.com/Wilenty/Notepad3/assets/61757638/27f81204-102b-4e72-aecc-049f2acec514)
+
 ---
 
 # Notepad3
