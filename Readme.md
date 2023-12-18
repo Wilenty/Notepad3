@@ -10,6 +10,8 @@ Especially that part (quote): "**The FSF argues that free software should not pl
 
 I am not selling above mentioned software, I just made a better installer for three separate original installers (AiO), because they don't want to do it.
 
+So I deserved to be banned because I helped them?
+
 ---
 
 ### I do not agree to use any part of my work/code in all others "rizonesoft Notepad3" without mention about my  contribution.
