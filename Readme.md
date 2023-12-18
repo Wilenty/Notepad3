@@ -1,3 +1,17 @@
+#### At the outset:
+according to the new RizoneSoft license: https://github.com/rizonesoft/Notepad3/blob/master/License.txt
+
+which includes the GPL license: https://en.wikipedia.org/wiki/GNU_General_Public_License#Terms_and_conditions
+
+Quote:
+"**The terms and conditions of the GPL must be made available to anybody receiving a copy of the work that has a GPL applied to it ("the licensee"). Any licensee who adheres to the terms and conditions is given permission to modify the work, as well as to copy and redistribute the work or any derivative version. The licensee is allowed to charge a fee for this service or do this free of charge. This latter point distinguishes the GPL from software licenses that prohibit commercial redistribution. The FSF argues that free software should not place restrictions on commercial use,[48] and the GPL explicitly states that GPL works may be sold at any price.**"
+
+Especially that part (quote): "**The FSF argues that free software should not place restrictions on commercial use,[48] and the GPL explicitly states that GPL works may be sold at any price.**"
+
+I am not selling above mentioned software, I just made a better installer for three separate original installers (AiO), because they don't want to do it.
+
+---
+
 ### I do not agree to use any part of my work/code in all others "rizonesoft Notepad3" without mention about my  contribution.
 
 Because, without any word they removed my "Additional Notepad3Portable.cmd Launcher": https://github.com/rizonesoft/Notepad3/commit/a3eb9f1a06e459e3739d1b48e270342c1707332c?diff=split
