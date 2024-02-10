@@ -1,3 +1,5 @@
+[![Total Downloads](https://img.shields.io/github/downloads/Wilenty/Notepad3/total.svg)](https://github.com/Wilenty/Notepad3/releases)
+
 #### At the outset:
 according to the new RizoneSoft license: https://github.com/rizonesoft/Notepad3/blob/master/License.txt
 
